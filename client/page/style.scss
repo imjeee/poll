@@ -1,0 +1,52 @@
+body {
+  background-color: #aaa !important;
+
+  #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+  }
+
+  #app {
+    margin-top: 30px;
+
+    .form-check {
+
+      .radioBtn {
+        background-color: #ddd;
+        position: absolute;
+        left: 0px;
+        top: 6px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      input {
+        display: none;
+        &:checked ~ .radioBtn {
+          background-color: red;
+        }
+      }
+
+      .form-check-label {
+        width: 100%;
+        padding-left: 5px;
+        color: #666;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+}
