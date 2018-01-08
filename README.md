@@ -12,25 +12,29 @@ this section will help you set it up
 # installing and usage
 
 ```
-1. git clone git@github.com:imjeee/poll.git #clone app
+1. git clone git@github.com:imjeee/poll.git # clone app
 ```
 ```
-2. yarn start (to start react app)
+2. yarn start # to start react app
 ```
 ```
-3. nodemon server.js (to start server app)
+3. nodemon server.js # to start server app
 ```
 ```
-1. git clone git@github.com:imjeee/poll.git
+4. open localhost:8080 # go to UI
 ```
-2. yarn start (to start react app)
-3. nodemon server.js (to start server app)
-4. go to localhost:8080 for UI
 
 ## Architecture
-this project contains 2 small apps, front end app built with react.js, middleware app build with express.js uses mongoose
+this project contains 2 small apps, UI app built with react.js, middleware app build with express.js uses mongoose
 
 # UI
+UI has 2 pages, home page contains a random poll question, after clicking submit, you'll be redirected to the second page to see the poll results, clicking back button will to go back to home page, with another random question (possibly the same question)
 
+# service
+service layer connects to mongodb (currently hosted by mlab) and exposes several interface for UI to consume.
+1. /api/getQuestions (return all questions in db)
+2. /api/getRandomQuestion (return a random question from db)
+3. /api/updateAnswerInQuestion (takes question's id, and the answer's id, update db, returns updated question)
+4. /api/addQuestion (takes a new question object and add to db)
 
 
