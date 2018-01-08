@@ -59,7 +59,7 @@ export default class Home extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col"></div>
-          <div className="col">
+          <div className="col-6">
             <div className="card">
               <div className="card-header">
                 Question

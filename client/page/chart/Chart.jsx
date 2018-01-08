@@ -33,25 +33,25 @@ export default class Chart extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col"></div>
-          <div className="col">
+          <div className="col-6">
             <div className="card">
               <div className="card-header">Result</div>
               <div className="card-body">
                 <h5 className="card-title">{this.state.question}</h5>
                 <div className="card-legend">
-                {
-                  this.state.data.map((entry, index) => {
-                    return <span style={{backgroundColor: this.state.color[index % this.state.color.length]}} key={'legend-' + index}>
-                      {entry.name}({entry.value})
-                    </span>
-                  })
-                }
-              </div>
-                <PieChart width={400} height={300}>
+                  {
+                    this.state.data.map((entry, index) => {
+                      return <div style={{backgroundColor: this.state.color[index % this.state.color.length]}} key={'legend-' + index}>
+                        {entry.name} ({entry.value})
+                      </div>
+                    })
+                  }
+                </div>
+                <PieChart width={500} height={300}>
                   <Pie
                     data={this.state.data}
-                    cx={190}
-                    cy={130}
+                    cx={250}
+                    cy={150}
                     innerRadius={5}
                     outerRadius={80}
                     fill="#8884d8"
