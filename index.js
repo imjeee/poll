@@ -5,18 +5,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-import Home from './client/page/Home.jsx';
-// import Chart from './client/page/Chart.jsx';
-
-const Chart = () => (
-  <div>chart aaaa</div>
-)
+import Home from './client/page/home/Home.jsx';
+import Chart from './client/page/chart/Chart.jsx';
 
 ReactDOM.render(
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Chart} />
-        <Route exact path="/chart" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/chart" component={Chart} />
       </Switch>
     </BrowserRouter>,
 document.getElementById('root'));
