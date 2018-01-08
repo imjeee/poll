@@ -2,6 +2,9 @@
 polling app get a random poll and generate poll distribution after submission.
 technologies used: node, react, webpack, babel, scss, express, mongoose, es6, bootstrap, font-awesome, react-router-dom, etc
 
+![poll question](https://github.com/imjeee/poll/blob/master/Screen%20Shot%202018-01-07%20at%2010.57.12%20PM.png)
+![poll result](https://github.com/imjeee/poll/blob/master/Screen%20Shot%202018-01-07%20at%2010.57.01%20PM.png)
+
 ## Getting Started
 this section will help you set it up
 
