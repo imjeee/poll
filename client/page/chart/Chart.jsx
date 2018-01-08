@@ -54,8 +54,7 @@ export default class Chart extends React.Component {
                     cy={150}
                     innerRadius={5}
                     outerRadius={80}
-                    fill="#8884d8"
-                    paddingAngle={5} >
+                    fill="#8884d8" >
                   	{
                     	this.state.data.map((entry, index) => <Cell fill={this.state.color[index % this.state.color.length]} key={'chart-' + index}/>)
                     }
