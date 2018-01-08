@@ -27,6 +27,8 @@ this section will help you set it up
 ## Architecture
 this project contains 2 small apps, UI app built with react.js, middleware app build with express.js uses mongoose
 
+![uml diagram](https://github.com/imjeee/poll/blob/master/diagram.png)
+
 # UI
 UI has 2 pages, home page contains a random poll question, after clicking submit, you'll be redirected to the second page to see the poll results, clicking back button will to go back to home page, with another random question (possibly the same question)
 
